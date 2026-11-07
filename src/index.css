@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@layer base {
+  html, body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F5F4EF;
+    color: #111111;
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom scrollbars and sleek UI touches */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #111111;
+}
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C8F000;
+}
+
+/* Radar & scanner animation for Enterprise AI OCR */
+@keyframes scanLaser {
+  0% {
+    top: 0%;
+    opacity: 0.8;
+  }
+  50% {
+    top: 92%;
+    opacity: 1;
+  }
+  100% {
+    top: 0%;
+    opacity: 0.8;
+  }
+}
+
+.animate-scan-beam {
+  animation: scanLaser 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* Subtle glow */
+.glow-lima {
+  box-shadow: 0 0 20px -3px rgba(200, 240, 0, 0.45);
+}
+.glow-lima-sm {
+  box-shadow: 0 0 10px -2px rgba(200, 240, 0, 0.35);
+}
+.glow-carbon {
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.35);
+}
